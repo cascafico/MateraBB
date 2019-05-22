@@ -1,0 +1,250 @@
+[
+  {
+    "op": "core/column-reorder",
+    "description": "Reorder columns",
+    "columnNames": [
+      "ID",
+      "LAT",
+      "LON",
+      "TIPOLOGIA",
+      "name",
+      "LEGALE_RA",
+      "UBICAZIONE",
+      "CLASSIFICAZIONE",
+      "City",
+      "POSTI LETTO"
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression value.toTitlecase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression grel:replace(value,\" Delle \",\" delle \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "name",
+          "columnName": "name",
+          "query": " D",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:replace(value,\" Delle \",\" delle \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression grel:replace(value,\" Di \",\" di \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "name",
+          "columnName": "name",
+          "query": " D",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:replace(value,\" Di \",\" di \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression grel:replace(value,\" Del \",\" del \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "name",
+          "columnName": "name",
+          "query": " D",
+          "mode": "text",
+          "caseSensitive": true,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:replace(value,\" Del \",\" del \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression grel:replace(value,\" Dei \",\" dei \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "name",
+          "columnName": "name",
+          "query": " D",
+          "mode": "text",
+          "caseSensitive": true,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:replace(value,\" Dei \",\" dei \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression grel:replace(value,\" Della \",\" della \")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "name",
+          "columnName": "name",
+          "query": " D",
+          "mode": "text",
+          "caseSensitive": true,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "name",
+    "expression": "grel:replace(value,\" Della \",\" della \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LEGALE_RA using expression value.toTitlecase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LEGALE_RA",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column CLASSIFICAZIONE using expression grel:replace(value,\"stelle\",\"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CLASSIFICAZIONE",
+    "expression": "grel:replace(value,\"stelle\",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column CLASSIFICAZIONE using expression grel:replace(value,\"lusso\",\"S\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CLASSIFICAZIONE",
+    "expression": "grel:replace(value,\"lusso\",\"S\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column CLASSIFICAZIONE using expression grel:replace(value,\" \",\"\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CLASSIFICAZIONE",
+    "expression": "grel:replace(value,\" \",\"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column addr:housenumber at index 7 based on column UBICAZIONE using expression grel:if(isNumeric(rpartition(value,\" \",true)[1]),\n   rpartition(value,\" \",true)[1],\n   \"\"\n)",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "addr:housenumber",
+    "columnInsertIndex": 7,
+    "baseColumnName": "UBICAZIONE",
+    "expression": "grel:if(isNumeric(rpartition(value,\" \",true)[1]),\n   rpartition(value,\" \",true)[1],\n   \"\"\n)",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column addr:street at index 7 based on column UBICAZIONE using expression grel:rpartition(value,\" \",true)[0]",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "newColumnName": "addr:street",
+    "columnInsertIndex": 7,
+    "baseColumnName": "UBICAZIONE",
+    "expression": "grel:rpartition(value,\" \",true)[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column POSTI LETTO to POSTILETTO",
+    "oldColumnName": "POSTI LETTO",
+    "newColumnName": "POSTILETTO"
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column TIPOLOGIA",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "TIPOLOGIA",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Albergo"
+        ],
+        "to": "hotel"
+      }
+    ]
+  }
+]

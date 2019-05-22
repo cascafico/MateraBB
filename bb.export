@@ -1,0 +1,16 @@
+   {
+      "ID"  : {{(cells["ID"].value)}},
+      "lat" : {{(cells["LAT"].value)}},
+      "lon" : {{(cells["LON"].value)}},
+      "tags" : {
+               "operator" : {{jsonize(cells["LEGALE_RA"].value)}},
+               "ref" : {{jsonize(cells["ID"].value)}},
+               "beds" : {{jsonize(cells["POSTILETTO"].value)}},
+               "name" : {{jsonize(cells["name"].value)}},
+               "addr:street" : {{jsonize(cells["addr:street"].value)}},
+               "addr:housenumber" : {{jsonize(cells["addr:housenumber"].value)}},
+               "breakfast"  : {{jsonize(cells["breakfast"].value)}},
+               "tourism"  : {{jsonize(cells["TIPOLOGIA"].value)}}
+               }
+    }
+

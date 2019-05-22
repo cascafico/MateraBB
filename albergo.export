@@ -1,0 +1,14 @@
+   {
+      "ID"  : {{(cells["ref:mise"].value)}},
+      "LAT" : {{(cells["lat"].value)}},
+      "LON" : {{(cells["lon"].value)}},
+      "tags" : {
+               "operator" : {{jsonize(cells["LEGALE_RA"].value)}},
+               "ref" : {{jsonize(cells["ID"].value)}},
+               "beds" : {{jsonize(cells["POSTI LETTO"].value)}},
+               "name" : {{jsonize(cells["name"].value)}},
+               "stars" : {{jsonize(cells["CLASSIFICAZIONE"].value)}},
+               "tourism"  : "hotel"
+               }
+    }
+

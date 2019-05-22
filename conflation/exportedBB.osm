@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="UTF-8"?><osm version="0.6" generator="Overpass API 0.7.55.7 8b86ff77">
+<note>The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.</note>
+<meta osm_base="2019-05-16T12:41:03Z" areas="2019-05-16T12:02:02Z"/>
+
+  <node id="6047327369" lat="40.6586048" lon="16.6158938" version="1" timestamp="2018-11-08T21:28:41Z" changeset="64307358" uid="9067057" user="FilippoS87">
+    <tag k="addr:city" v="Matera"/>
+    <tag k="addr:housenumber" v="257"/>
+    <tag k="addr:postcode" v="75100"/>
+    <tag k="addr:street" v="Via Casalnuovo"/>
+    <tag k="description" v="B&amp;B a Matera con camere caratteristiche dei Sassi di Matera."/>
+    <tag k="email" v="info@casastella.it"/>
+    <tag k="internet_access" v="yes"/>
+    <tag k="name" v="B&amp;B Casastella"/>
+    <tag k="phone" v="+39 0835310272"/>
+    <tag k="rooms" v="4"/>
+    <tag k="smoking" v="no"/>
+    <tag k="tourism" v="guest_house"/>
+    <tag k="website" v="http://www.casastella.it"/>
+  </node>
+  <node id="6436462051" lat="40.6715278" lon="16.6034984" version="6" timestamp="2019-04-29T18:45:40Z" changeset="69708319" uid="9829321" user="Casa Nonna Franca">
+    <tag k="name" v="Casa Vacanze  Casa Nonna franca"/>
+    <tag k="tourism" v="guest_house"/>
+  </node>
+  <node id="1894975702" lat="40.6670187" lon="16.6109793" version="2" timestamp="2013-10-23T07:14:43Z" changeset="18497778" uid="28559" user="Stemby">
+    <tag k="name" v="B&amp;B all'Annunziata Vecchia"/>
+    <tag k="tourism" v="guest_house"/>
+    <tag k="website" v="http://annunziata.matera.it/"/>
+  </node>
+  <node id="2229591604" lat="40.6658548" lon="16.6117483" version="2" timestamp="2013-10-24T07:00:20Z" changeset="18514678" uid="354284" user="sbiribizio">
+    <tag k="name" v="Le 12 lune"/>
+    <tag k="tourism" v="guest_house"/>
+  </node>
+  <node id="4191537158" lat="40.6665353" lon="16.6123552" version="1" timestamp="2016-05-17T11:27:07Z" changeset="39374283" uid="3931247" user="UNIBAS_V_GRUPPO3">
+    <tag k="name" v="B&amp;B La finestra sui Sassi"/>
+    <tag k="tourism" v="guest_house"/>
+  </node>
+  <node id="4191537159" lat="40.6666157" lon="16.6124719" version="1" timestamp="2016-05-17T11:27:07Z" changeset="39374283" uid="3931247" user="UNIBAS_V_GRUPPO3">
+    <tag k="name" v="B&amp;B San Potito"/>
+    <tag k="tourism" v="guest_house"/>
+  </node>
+  <node id="4191642963" lat="40.6664951" lon="16.6125319" version="1" timestamp="2016-05-17T12:25:23Z" changeset="39375408" uid="3931247" user="UNIBAS_V_GRUPPO3">
+    <tag k="name" v="Casa Vacanza Una carezza per l'anima"/>
+    <tag k="tourism" v="guest_house"/>
+  </node>
+  <node id="4191642964" lat="40.6661925" lon="16.6119547" version="1" timestamp="2016-05-17T12:25:23Z" changeset="39375408" uid="3931247" user="UNIBAS_V_GRUPPO3">
+    <tag k="name" v="Casa vacanze Le Scuderie Noha"/>
+    <tag k="tourism" v="guest_house"/>
+  </node>
+  <node id="4192062318" lat="40.6659351" lon="16.6097437" version="1" timestamp="2016-05-17T17:28:12Z" changeset="39382625" uid="3940932" user="UNIBAS_V_GRUPPO_4">
+    <tag k="addr:city" v="Matera"/>
+    <tag k="addr:housenumber" v="17"/>
+    <tag k="addr:postcode" v="75100"/>
+    <tag k="addr:street" v="Piazza del Sedile"/>
+    <tag k="name" v="Residenza dei Suoni"/>
+    <tag k="tourism" v="guest_house"/>
+  </node>
+  <node id="4857980576" lat="40.6627534" lon="16.6070649" version="1" timestamp="2017-05-16T15:31:29Z" changeset="48735304" uid="5949101" user="Gigi Montemurro">
+    <tag k="addr:city" v="Matera"/>
+    <tag k="addr:housenumber" v="49"/>
+    <tag k="addr:postcode" v="75100"/>
+    <tag k="addr:street" v="Via Andrea Serrao"/>
+    <tag k="description" v="Camere in centro con trattamento alberghiero."/>
+    <tag k="internet_access" v="wlan"/>
+    <tag k="name" v="Residenza del Maestro"/>
+    <tag k="rooms" v="4"/>
+    <tag k="tourism" v="guest_house"/>
+  </node>
+  <node id="5766186273" lat="40.6646531" lon="16.6097231" version="1" timestamp="2018-07-17T15:18:38Z" changeset="60804953" uid="299863" user="avs">
+    <tag k="addr:housenumber" v="14"/>
+    <tag k="addr:street" v="Gradoni Municipio"/>
+    <tag k="name" v="L'Albero di Eliana"/>
+    <tag k="tourism" v="guest_house"/>
+  </node>
+  <node id="5424891921" lat="40.6806838" lon="16.5837081" version="4" timestamp="2018-04-03T12:53:17Z" changeset="57772017" uid="1476146" user="Alecs01">
+    <tag k="addr:city" v="Matera"/>
+    <tag k="addr:housenumber" v="7"/>
+    <tag k="addr:postcode" v="75100"/>
+    <tag k="addr:street" v="Via Gravina"/>
+    <tag k="name" v="B&amp;B Buon Vento"/>
+    <tag k="phone" v="+39 340 086 9461"/>
+    <tag k="tourism" v="guest_house"/>
+  </node>
+  <node id="2204680617" lat="40.6966476" lon="16.5856733" version="3" timestamp="2013-03-17T10:48:23Z" changeset="15393501" uid="977303" user="fair">
+    <tag k="addr:city" v="Matera"/>
+    <tag k="addr:postcode" v="75100"/>
+    <tag k="email" v="info@pinetapaducci.com"/>
+    <tag k="internet_access" v="yes"/>
+    <tag k="internet_access:fee" v="no"/>
+    <tag k="name" v="B&amp;B Pineta Paducci"/>
+    <tag k="phone" v="+39 338 3662618;+39 328 5820626;+39 329 6121732"/>
+    <tag k="smoking" v="no"/>
+    <tag k="stars" v="2"/>
+    <tag k="tourism" v="guest_house"/>
+    <tag k="website" v="http://www.pinetapaducci.com"/>
+    <tag k="wheelchair" v="no"/>
+  </node>
+
+</osm>
