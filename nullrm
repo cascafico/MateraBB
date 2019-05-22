@@ -1,0 +1,3 @@
+# rimuovi da json tag (p.es addr:housenumber)  vuoti ("")   
+sed -i '/\"\"/d' conflation/BB.json
+

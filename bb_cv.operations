@@ -1,0 +1,433 @@
+[
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column TIPOLOGIA using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "TIPOLOGIA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column TIPOLOGIA using expression value.toLowercase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "TIPOLOGIA",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column TIPOLOGIA",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "TIPOLOGIA",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "casa vacanza"
+        ],
+        "to": "chalet"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column TIPOLOGIA",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOLOGIA",
+          "expression": "value",
+          "columnName": "TIPOLOGIA",
+          "invert": false,
+          "selection": [
+            {
+              "v": {
+                "v": "casa vacanze",
+                "l": "casa vacanze"
+              }
+            }
+          ],
+          "selectNumber": false,
+          "selectDateTime": false,
+          "selectBoolean": false,
+          "omitBlank": false,
+          "selectBlank": false,
+          "omitError": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "TIPOLOGIA",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "casa vacanze"
+        ],
+        "to": "chalet"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column TIPOLOGIA",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOLOGIA",
+          "expression": "value",
+          "columnName": "TIPOLOGIA",
+          "invert": false,
+          "selection": [
+            {
+              "v": {
+                "v": "casa vacanzw",
+                "l": "casa vacanzw"
+              }
+            }
+          ],
+          "selectNumber": false,
+          "selectDateTime": false,
+          "selectBoolean": false,
+          "omitBlank": false,
+          "selectBlank": false,
+          "omitError": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "TIPOLOGIA",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "casa vacanzw"
+        ],
+        "to": "chalet"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column TIPOLOGIA",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "TIPOLOGIA",
+          "expression": "value",
+          "columnName": "TIPOLOGIA",
+          "invert": false,
+          "selection": [
+            {
+              "v": {
+                "v": "bed & breakfast",
+                "l": "bed & breakfast"
+              }
+            }
+          ],
+          "selectNumber": false,
+          "selectDateTime": false,
+          "selectBoolean": false,
+          "omitBlank": false,
+          "selectBlank": false,
+          "omitError": false,
+          "selectError": false
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "TIPOLOGIA",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "bed & breakfast"
+        ],
+        "to": "guest_house"
+      }
+    ]
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression value.toTitlecase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "name",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column name using expression grel:value.replace(\" Di \", \" di \").replace(\" Del \", \" del \").replace(\" Dei \", \" dei \").replace(\" Dell'\", \" dell'\").replace(\" Della\", \" della\").replace(\" Delle \", \" delle \").replace(\" Degli\", \" degli\").replace(\" E \", \" e \").replace(\" A \", \" a \").replace(\" Nei \", \" nei \").replace(\" Nel \", \" nel \").replace(\" Sui \", \" sui \").replace(\" Sul \", \" sul \").replace(\" Dal \", \" dal \").replace(\" Dai \", \" dai \")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "name",
+    "expression": "grel:value.replace(\" Di \", \" di \").replace(\" Del \", \" del \").replace(\" Dei \", \" dei \").replace(\" Dell'\", \" dell'\").replace(\" Della\", \" della\").replace(\" Delle \", \" delle \").replace(\" Degli\", \" degli\").replace(\" E \", \" e \").replace(\" A \", \" a \").replace(\" Nei \", \" nei \").replace(\" Nel \", \" nel \").replace(\" Sui \", \" sui \").replace(\" Sul \", \" sul \").replace(\" Dal \", \" dal \").replace(\" Dai \", \" dai \")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LEGALE_RA using expression value.trim()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "LEGALE_RA",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LEGALE_RA using expression value.replace(/\\s+/,' ')",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "LEGALE_RA",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LEGALE_RA using expression value.toTitlecase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "LEGALE_RA",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LEGALE_RA using expression grel:split(value,\"'\")[0]+\"'\"+toTitlecase(split(value,\"'\")[1])",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "LEGALE_RA",
+    "expression": "grel:split(value,\"'\")[0]+\"'\"+toTitlecase(split(value,\"'\")[1])",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column LEGALE_RA using expression grel:replace(value,\"Srl\",\"S.R.L.\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "LEGALE_RA",
+    "expression": "grel:replace(value,\"Srl\",\"S.R.L.\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column UBICAZIONE using expression value.toTitlecase()",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "UBICAZIONE",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column street at index 6 based on column UBICAZIONE using expression grel:partition(value, /(\\d+).*/)[0]",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "newColumnName": "street",
+    "columnInsertIndex": 6,
+    "baseColumnName": "UBICAZIONE",
+    "expression": "grel:partition(value, /(\\d+).*/)[0]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column housenumber at index 6 based on column UBICAZIONE using expression grel:partition(value, /(\\d+).*/)[1]",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "newColumnName": "housenumber",
+    "columnInsertIndex": 6,
+    "baseColumnName": "UBICAZIONE",
+    "expression": "grel:partition(value, /(\\d+).*/)[1]",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column street using expression grel:replace(value,\" F.Lli\",\" f.lli\")",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "street",
+    "expression": "grel:replace(value,\" F.Lli\",\" f.lli\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column street using expression grel:split(value,\"'\")[0]+\"'\"+toTitlecase(split(value,\"'\")[1])",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "street",
+    "expression": "grel:split(value,\"'\")[0]+\"'\"+toTitlecase(split(value,\"'\")[1])",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column housenumber using expression grel:split(value,\" \")[0]",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "columnName": "housenumber",
+    "expression": "grel:split(value,\" \")[0]",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column street using expression grel:replace(value,\"Localita'\",\"Località\")",
+    "engineConfig": {
+      "facets": [
+        {
+          "name": "street",
+          "columnName": "street",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false,
+          "type": "text"
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "grel:replace(value,\"Localita'\",\"Località\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/text-transform",
+    "description": "Text transform on cells in column CODICE FISCALE using expression grel:\"IT\"+value",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "range",
+          "name": "CODICE FISCALE",
+          "expression": "value.length()",
+          "columnName": "CODICE FISCALE",
+          "from": 9,
+          "to": 14.6,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectError": true,
+          "selectBlank": true
+        }
+      ],
+      "mode": "record-based"
+    },
+    "columnName": "CODICE FISCALE",
+    "expression": "grel:\"IT\"+value",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10
+  },
+  {
+    "op": "core/column-rename",
+    "description": "Rename column ID to ref",
+    "oldColumnName": "ID",
+    "newColumnName": "ref"
+  },
+  {
+    "op": "core/column-addition",
+    "description": "Create column id at index 1 based on column lat using expression grel:rowIndex",
+    "engineConfig": {
+      "facets": [],
+      "mode": "record-based"
+    },
+    "newColumnName": "id",
+    "columnInsertIndex": 1,
+    "baseColumnName": "lat",
+    "expression": "grel:rowIndex",
+    "onError": "set-to-blank"
+  },
+  {
+    "op": "core/column-move",
+    "description": "Move column id to position 0",
+    "columnName": "id",
+    "index": 0
+  }
+]

@@ -1,5 +1,0 @@
-http://dati.comune.matera.it/dataset/elenco-strutture-ricettive-nel-comune-di-matera
-
-
-BB:
-rimuovi da json tag (p.es addr:housenumber)  vuoti ("")   sed -i '/\"\"/d' conflation/BB.json
